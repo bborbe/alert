@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.0.1
+
+- downgrade k8s to v0.28.6
+
 ## v1.0.0
 
 - Initial Version
