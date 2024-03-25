@@ -15,7 +15,7 @@ import (
 
 const alertJSON = `
 {
-  "apiVersion": "kafka.benjamin-borbe.de/v1",
+  "apiVersion": "monitoring.benjamin-borbe.de/v1",
   "kind": "Alert",
   "metadata": {
     "name": "my-alert",
