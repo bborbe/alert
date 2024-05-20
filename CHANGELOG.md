@@ -10,6 +10,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 
 ## v1.1.0
 
+- go mod update
 - add sort
 
 ## v1.0.1
