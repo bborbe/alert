@@ -8,10 +8,15 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.2.0
+
+- add AlertDeployer
+- go mod update
+
 ## v1.1.0
 
-- go mod update
 - add sort
+- go mod update
 
 ## v1.0.1
 
