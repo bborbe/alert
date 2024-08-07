@@ -23,7 +23,7 @@ type AlertDeployer interface {
 }
 
 func NewAlertDeployer(
-	clientset *versioned.Clientset,
+	clientset versioned.Interface,
 ) AlertDeployer {
 	return &alertDeployer{
 		clientset: clientset,
@@ -31,7 +31,7 @@ func NewAlertDeployer(
 }
 
 type alertDeployer struct {
-	clientset *versioned.Clientset
+	clientset versioned.Interface
 }
 
 func (a *alertDeployer) Deploy(ctx context.Context, alert v1.Alert) error {
