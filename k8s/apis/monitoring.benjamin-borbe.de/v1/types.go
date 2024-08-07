@@ -15,6 +15,15 @@ import (
 
 type Alerts []Alert
 
+func (a Alerts) Contains(name string) bool {
+	for _, aa := range a {
+		if aa.Name == name {
+			return true
+		}
+	}
+	return false
+}
+
 func (a Alerts) Specs() AlertSpecs {
 	var result AlertSpecs
 	for _, aa := range a {
@@ -49,6 +58,15 @@ labels:
 */
 
 type AlertSpecs []AlertSpec
+
+func (a AlertSpecs) Contains(name string) bool {
+	for _, aa := range a {
+		if aa.Name == name {
+			return true
+		}
+	}
+	return false
+}
 
 // AlertSpec is the spec for a Foo resource
 type AlertSpec struct {
