@@ -4,8 +4,8 @@ github.com/bborbe/collection v1.8.0 h1:TLb/I8XJKt8pjSWFs5J4CqHO+OuHKXytZirBXU4q4
 github.com/bborbe/collection v1.8.0/go.mod h1:9rOTju2mhkBYI5iSCdtCCiPKHkftaFLJuMnC7kD+mxQ=
 github.com/bborbe/errors v1.3.0 h1:LcCk5WjoH/sN+eBy45MspCYxsYAdrwla2hKePZdHLIM=
 github.com/bborbe/errors v1.3.0/go.mod h1:ZKSsf4/NJYhKkxSgtlLY+2jJa3hW2tbb/lQe3w9qZLM=
-github.com/bborbe/k8s v1.3.8 h1:et1T3dPSXeMlRSMN87gqZSECaAu/rrcLnuBFmivSB6U=
-github.com/bborbe/k8s v1.3.8/go.mod h1:XSMjuGJf4fBV5JqmpIv1XYLjPaNyDC1LI/GQtA/kzNk=
+github.com/bborbe/k8s v1.4.0 h1:/sOU1OtvlCqGuZWQpWkaZ8rVR0/P0FrZFbW5GzE4yXA=
+github.com/bborbe/k8s v1.4.0/go.mod h1:kwaldWmprqV4WahvfTL1F7hMIDpOxkm6HhoJ1MpS+78=
 github.com/bborbe/run v1.5.5 h1:mMZ4tD51SXkfVwhQJc2PcJvvFXXti/M64DmAHbNewyE=
 github.com/bborbe/run v1.5.5/go.mod h1:w6aAlbrwgRuhfiIkT4lU3uDqiCbg1//1jhfBP5WTJIU=
 github.com/bborbe/validation v1.2.0 h1:K7n38zKAPWDhmw1bnG+1goZJvxRY4ZuH/Mnmwefmu3Y=

@@ -5,7 +5,7 @@ go 1.23.4
 require (
 	github.com/actgardner/gogen-avro/v9 v9.2.0
 	github.com/bborbe/errors v1.3.0
-	github.com/bborbe/k8s v1.3.8
+	github.com/bborbe/k8s v1.4.0
 	github.com/bborbe/validation v1.2.0
 	github.com/golang/glog v1.2.4
 	github.com/google/addlicense v1.1.1
