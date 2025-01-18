@@ -34,9 +34,5 @@ vulncheck:
 	go run -mod=vendor golang.org/x/vuln/cmd/govulncheck $(shell go list -mod=vendor ./... | grep -v /vendor/)
 
 generatek8s:
-	rm -rf k8s/client ${GOPATH}/src/github.com/bborbe/alert
-	chmod a+x vendor/k8s.io/code-generator/*.sh
-	bash vendor/k8s.io/code-generator/generate-groups.sh applyconfiguration,client,deepcopy,informer,lister \
-	github.com/bborbe/alert/k8s/client github.com/bborbe/alert/k8s/apis \
-	monitoring.benjamin-borbe.de:v1
-	cp -R ${GOPATH}/src/github.com/bborbe/alert/k8s .
+	bash hack/update-codegen.sh
+
