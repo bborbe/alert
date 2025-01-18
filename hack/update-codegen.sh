@@ -19,10 +19,3 @@ kube::codegen::gen_client \
     --output-pkg "${THIS_PKG}/k8s/client" \
     --boilerplate "${SCRIPT_ROOT}/hack/boilerplate.go.txt" \
     "${SCRIPT_ROOT}/k8s/apis"
-
-# Generate deepcopy functions
-${CODEGEN_PKG}/cmd/deepcopy-gen/deepcopy-gen \
-  --input-dirs "my-project/api/v1" \
-  --output-file-base zz_generated.deepcopy \
-  --bounding-dirs "my-project/api/v1" \
-  --go-header-file "${SCRIPT_ROOT}/hack/boilerplate.go.txt"
