@@ -15,6 +15,7 @@ kube::codegen::gen_helpers \
 
 kube::codegen::gen_client \
     --with-watch \
+    --with-applyconfig \
     --output-dir "${SCRIPT_ROOT}/k8s/client" \
     --output-pkg "${THIS_PKG}/k8s/client" \
     --boilerplate "${SCRIPT_ROOT}/hack/boilerplate.go.txt" \
