@@ -48,11 +48,13 @@ type Alert struct {
 }
 
 func (a Alert) Equal(other k8s.Type) bool {
-	alert, ok := other.(Alert)
-	if !ok {
-		return false
+	switch alert := other.(type) {
+	case Alert:
+		return a.Spec.Equal(alert.Spec)
+	case *Alert:
+		return a.Spec.Equal(alert.Spec)
 	}
-	return a.Spec.Equal(alert.Spec)
+	return false
 }
 
 func (a Alert) Validate(ctx context.Context) error {
@@ -60,7 +62,7 @@ func (a Alert) Validate(ctx context.Context) error {
 }
 
 func (a Alert) Identifier() k8s.Identifier {
-	return k8s.Identifier(a.Spec.Name)
+	return k8s.Identifier(a.Name)
 }
 
 func (a Alert) String() string {
