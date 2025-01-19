@@ -25,7 +25,7 @@ var _ = Describe("Alert", func() {
 		alertA = &v1.Alert{
 			ObjectMeta: apismetav1.ObjectMeta{
 				Name:      "alert-a",
-				Namespace: "alertA",
+				Namespace: "ns-a",
 			},
 			Spec: v1.AlertSpec{
 				Name:       "MyAlertA",
@@ -41,7 +41,7 @@ var _ = Describe("Alert", func() {
 		alertB = &v1.Alert{
 			ObjectMeta: apismetav1.ObjectMeta{
 				Name:      "alert-b",
-				Namespace: "alertB",
+				Namespace: "ns-b",
 			},
 			Spec: v1.AlertSpec{
 				Name:       "MyAlertB",
@@ -88,7 +88,7 @@ var _ = Describe("Alert", func() {
 			id = alertA.Identifier()
 		})
 		It("is valid", func() {
-			Expect(id).To(Equal(k8s.Identifier("alert-a")))
+			Expect(id).To(Equal(k8s.Identifier("ns-a-alert-a")))
 		})
 	})
 	Context("String", func() {

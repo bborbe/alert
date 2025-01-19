@@ -62,7 +62,7 @@ func (a Alert) Validate(ctx context.Context) error {
 }
 
 func (a Alert) Identifier() k8s.Identifier {
-	return k8s.Identifier(a.Name)
+	return k8s.Identifier(k8s.BuildName(a.Namespace, a.Name))
 }
 
 func (a Alert) String() string {
