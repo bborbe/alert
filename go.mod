@@ -3,12 +3,13 @@ module github.com/bborbe/alert
 go 1.24.1
 
 require (
+	github.com/actgardner/gogen-avro/v9 v9.2.0
 	github.com/bborbe/errors v1.3.0
 	github.com/bborbe/k8s v1.5.2
 	github.com/bborbe/validation v1.2.0
 	github.com/golang/glog v1.2.4
 	github.com/google/addlicense v1.1.1
-	github.com/incu6us/goimports-reviser v0.1.6
+	github.com/incu6us/goimports-reviser/v3 v3.9.1
 	github.com/kisielk/errcheck v1.9.0
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.11.2
 	github.com/onsi/ginkgo/v2 v2.23.3
@@ -23,7 +24,6 @@ require (
 )
 
 require (
-	github.com/actgardner/gogen-avro/v9 v9.2.0 // indirect
 	github.com/bborbe/collection v1.8.0 // indirect
 	github.com/bborbe/run v1.6.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -46,7 +46,7 @@ require (
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/pprof v0.0.0-20250317173921-a4b03ec1a45e // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/incu6us/goimports-reviser/v3 v3.9.1 // indirect
+	github.com/incu6us/goimports-reviser v0.1.6 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mailru/easyjson v0.9.0 // indirect

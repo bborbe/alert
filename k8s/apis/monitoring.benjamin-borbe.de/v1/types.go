@@ -9,6 +9,7 @@ import (
 	"reflect"
 
 	"github.com/bborbe/errors"
+	"github.com/bborbe/k8s"
 	"github.com/bborbe/validation"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
@@ -32,6 +33,8 @@ func (a Alerts) Specs() AlertSpecs {
 	return result
 }
 
+var _ k8s.Type = Alert{}
+
 // +genclient
 // +genclient:noStatus
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -42,6 +45,28 @@ type Alert struct {
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
 	Spec AlertSpec `json:"spec"`
+}
+
+func (a Alert) Equal(other k8s.Type) bool {
+	switch alert := other.(type) {
+	case Alert:
+		return a.Spec.Equal(alert.Spec)
+	case *Alert:
+		return a.Spec.Equal(alert.Spec)
+	}
+	return false
+}
+
+func (a Alert) Validate(ctx context.Context) error {
+	return a.Spec.Validate(ctx)
+}
+
+func (a Alert) Identifier() k8s.Identifier {
+	return k8s.Identifier(k8s.BuildName(a.Namespace, a.Name))
+}
+
+func (a Alert) String() string {
+	return a.Name
 }
 
 /*
