@@ -8,6 +8,15 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.7.0
+
+- Add GitHub workflows for CI, Claude Code, and Claude Code review
+- Add golangci-lint configuration
+- Update Makefile with new targets (lint, gosec, trivy, osv-scanner)
+- Update Go version from 1.24.1 to 1.25.2
+- Add new security scanning and linting tools
+- Code formatting improvements
+
 ## v1.6.0
 
 - remove vendor

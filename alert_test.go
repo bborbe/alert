@@ -51,11 +51,15 @@ var _ = Describe("Alert", func() {
 		Expect(alert.Spec.Name).To(Equal("K8sPodStatus"))
 	})
 	It("contains annotations", func() {
-		Expect(alert.Spec.Annotations).To(HaveKeyWithValue("description", "Failed K8s Pods for more than 1h"))
+		Expect(
+			alert.Spec.Annotations,
+		).To(HaveKeyWithValue("description", "Failed K8s Pods for more than 1h"))
 		Expect(alert.Spec.Annotations).To(HaveKeyWithValue("summary", "K8s Pod status"))
 	})
 	It("contains expression", func() {
-		Expect(alert.Spec.Expression).To(Equal(`sum(max_over_time(octopus_k8s_pod_status_counter{status="Waiting"}[600s])) by (name) > 0`))
+		Expect(
+			alert.Spec.Expression,
+		).To(Equal(`sum(max_over_time(octopus_k8s_pod_status_counter{status="Waiting"}[600s])) by (name) > 0`))
 	})
 	It("contains for", func() {
 		Expect(alert.Spec.For).To(Equal("1h"))

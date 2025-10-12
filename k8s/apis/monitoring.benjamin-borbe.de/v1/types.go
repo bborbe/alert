@@ -95,11 +95,11 @@ func (a AlertSpecs) Contains(name string) bool {
 
 // AlertSpec is the spec for a Foo resource
 type AlertSpec struct {
-	Name        string            `json:"name" yaml:"name"`
+	Name        string            `json:"name"                  yaml:"name"`
 	Annotations map[string]string `json:"annotations,omitempty" yaml:"annotations,omitempty"`
-	Expression  string            `json:"expression,omitempty" yaml:"expression,omitempty"`
-	For         string            `json:"for,omitempty" yaml:"for,omitempty"`
-	Labels      map[string]string `json:"labels,omitempty" yaml:"labels,omitempty"`
+	Expression  string            `json:"expression,omitempty"  yaml:"expression,omitempty"`
+	For         string            `json:"for,omitempty"         yaml:"for,omitempty"`
+	Labels      map[string]string `json:"labels,omitempty"      yaml:"labels,omitempty"`
 }
 
 func (a AlertSpec) Equal(alert AlertSpec) bool {

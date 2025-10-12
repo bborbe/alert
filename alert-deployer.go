@@ -35,9 +35,13 @@ type alertDeployer struct {
 }
 
 func (a *alertDeployer) Deploy(ctx context.Context, alert v1.Alert) error {
-	currentAlert, err := a.clientset.MonitoringV1().Alerts(alert.Namespace).Get(ctx, alert.Name, metav1.GetOptions{})
+	currentAlert, err := a.clientset.MonitoringV1().
+		Alerts(alert.Namespace).
+		Get(ctx, alert.Name, metav1.GetOptions{})
 	if err != nil {
-		_, err = a.clientset.MonitoringV1().Alerts(alert.Namespace).Create(ctx, &alert, metav1.CreateOptions{})
+		_, err = a.clientset.MonitoringV1().
+			Alerts(alert.Namespace).
+			Create(ctx, &alert, metav1.CreateOptions{})
 		if err != nil {
 			return errors.Wrap(ctx, err, "create alert failed")
 		}
@@ -45,7 +49,9 @@ func (a *alertDeployer) Deploy(ctx context.Context, alert v1.Alert) error {
 		return nil
 	}
 	updateAlert := mergeAlert(*currentAlert, alert)
-	_, err = a.clientset.MonitoringV1().Alerts(alert.Namespace).Update(ctx, &updateAlert, metav1.UpdateOptions{})
+	_, err = a.clientset.MonitoringV1().
+		Alerts(alert.Namespace).
+		Update(ctx, &updateAlert, metav1.UpdateOptions{})
 	if err != nil {
 		return errors.Wrap(ctx, err, "update alert failed")
 	}
@@ -54,7 +60,9 @@ func (a *alertDeployer) Deploy(ctx context.Context, alert v1.Alert) error {
 }
 
 func (a *alertDeployer) Undeploy(ctx context.Context, namespace k8s.Namespace, name string) error {
-	_, err := a.clientset.MonitoringV1().Alerts(namespace.String()).Get(ctx, name, metav1.GetOptions{})
+	_, err := a.clientset.MonitoringV1().
+		Alerts(namespace.String()).
+		Get(ctx, name, metav1.GetOptions{})
 	if err != nil {
 		glog.V(4).Infof("alert '%s' not found => skip", name)
 		return nil
