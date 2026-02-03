@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.2
+
+- Update Go to 1.25.6
+- Update kubernetes dependencies to 0.33.7
+- Update testing frameworks (ginkgo v2.28.1, gomega v1.39.1)
+- Update various indirect dependencies
+
 ## v1.8.1
 
 - update go to 1.25.5 and dependencies
