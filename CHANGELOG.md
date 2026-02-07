@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.2
+
+- Update Go from 1.25.5 to 1.25.7
+- Update bborbe dependencies (errors, k8s, validation)
+- Update Kubernetes client libraries to v0.33.7
+- Update testing frameworks (ginkgo v2.28.1, gomega v1.39.1)
+- Update various indirect dependencies
+
 ## v1.8.1
 
 - update go to 1.25.5 and dependencies
