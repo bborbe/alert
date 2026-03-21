@@ -8,6 +8,11 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.7
+
+- chore: enable golangci-lint in check target and fix all lint violations (depguard, prealloc, revive, staticcheck)
+- chore: update .golangci.yml to standard project config with nestif, errname, unparam, bodyclose, forcetypeassert, asasalint, prealloc linters
+
 ## v1.8.6
 
 - standardize Makefile: multiline trivy format

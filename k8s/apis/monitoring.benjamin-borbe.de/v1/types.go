@@ -26,7 +26,7 @@ func (a Alerts) Contains(name string) bool {
 }
 
 func (a Alerts) Specs() AlertSpecs {
-	var result AlertSpecs
+	result := make(AlertSpecs, 0, len(a))
 	for _, aa := range a {
 		result = append(result, aa.Spec)
 	}

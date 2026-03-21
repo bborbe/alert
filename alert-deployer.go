@@ -74,7 +74,7 @@ func (a *alertDeployer) Undeploy(ctx context.Context, namespace k8s.Namespace, n
 	return nil
 }
 
-func mergeAlert(current, new v1.Alert) v1.Alert {
-	new.ObjectMeta.ResourceVersion = current.ObjectMeta.ResourceVersion
-	return new
+func mergeAlert(current, updated v1.Alert) v1.Alert {
+	updated.ResourceVersion = current.ResourceVersion
+	return updated
 }
