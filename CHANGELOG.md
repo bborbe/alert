@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.9
+
+- downgrade fxamacker/cbor/v2 v2.9.1 → v2.9.0
+- downgrade go.yaml.in/yaml/v2 v2.4.4 → v2.4.3
+- downgrade k8s.io/klog/v2 v2.140.0 → v2.130.1
+- downgrade k8s.io/kube-openapi and k8s.io/utils to earlier versions
+
 ## v1.8.8
 
 - Enabled parallel golangci-lint runners
