@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.10
+
+- bump golangci-lint to v2.11.4
+- bump osv-scanner to v2.3.5
+- bump go-modtool to v0.7.1
+- add opencontainers/runtime-spec replace directive
+- update indirect deps
+
 ## v1.8.9
 
 - downgrade fxamacker/cbor/v2 v2.9.1 → v2.9.0
