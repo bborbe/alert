@@ -7,6 +7,8 @@ package v1
 
 // AlertSpecApplyConfiguration represents a declarative configuration of the AlertSpec type for use
 // with apply.
+//
+// AlertSpec is the spec for a Foo resource
 type AlertSpecApplyConfiguration struct {
 	Name        *string           `json:"name,omitempty"`
 	Annotations map[string]string `json:"annotations,omitempty"`

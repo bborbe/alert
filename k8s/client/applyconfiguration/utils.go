@@ -11,7 +11,7 @@ import (
 	monitoringbenjaminborbedev1 "github.com/bborbe/alert/k8s/client/applyconfiguration/monitoring.benjamin-borbe.de/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	testing "k8s.io/client-go/testing"
+	managedfields "k8s.io/apimachinery/pkg/util/managedfields"
 )
 
 // ForKind returns an apply configuration type for the given GroupVersionKind, or nil if no
@@ -28,6 +28,6 @@ func ForKind(kind schema.GroupVersionKind) interface{} {
 	return nil
 }
 
-func NewTypeConverter(scheme *runtime.Scheme) *testing.TypeConverter {
-	return &testing.TypeConverter{Scheme: scheme, TypeResolver: internal.Parser()}
+func NewTypeConverter(scheme *runtime.Scheme) managedfields.TypeConverter {
+	return managedfields.NewSchemeTypeConverter(scheme, internal.Parser())
 }
