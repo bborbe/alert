@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.11
+
+- bump Go toolchain to 1.26.2
+- update counterfeiter to v6.12.2
+- ignore new vuln scanner findings (bbolt, bleve, aws-sdk-go-v2)
+- improve vulncheck with JSON filtering and allowlist
+
 ## v1.8.10
 
 - bump golangci-lint to v2.11.4
