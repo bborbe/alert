@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.13
+
+- bump go 1.26.2 → 1.26.3
+- bump bborbe/errors v1.5.11 → v1.5.13
+- bump bborbe/validation v1.4.12 → v1.4.13
+- bump structured-merge-diff v6.3.2 → v6.4.0
+
 ## v1.8.12
 
 - chore: Migrate to tools.env + Makefile @version pattern; remove tools.go and obsolete replace block. go.mod reduced from 489 to 77 lines.
