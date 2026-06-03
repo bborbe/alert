@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.14
+
+- bump k8s.io/apimachinery + k8s.io/client-go to v0.36.1
+- bump golang.org/x/net v0.55.0, x/sys v0.45.0 (security fixes)
+- bump bborbe/k8s v1.14.3, bborbe/time v1.27.0
+- upgrade go directive to 1.26.4
+- inline errcheck+gosec into golangci-lint; drop standalone runners
+
 ## v1.8.13
 
 - bump go 1.26.2 → 1.26.3
