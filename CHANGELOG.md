@@ -8,6 +8,13 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.16
+
+- Bump github.com/bborbe/k8s to v1.14.4
+- Bump github.com/bborbe/collection, math, parse, run, time deps
+- Bump github.com/getsentry/sentry-go to v0.46.2
+- Bump k8s.io/apiextensions-apiserver to v0.36.2
+
 ## v1.8.15
 
 - Bump bborbe/errors to v1.5.15
