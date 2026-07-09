@@ -8,6 +8,14 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## v1.8.17
+
+- Bump github.com/bborbe/errors to v1.5.16
+- Bump github.com/bborbe/k8s to v1.14.5
+- Bump github.com/bborbe/validation to v1.4.16
+- Bump sigs.k8s.io/structured-merge-diff/v6 to v6.4.2
+- Bump go toolchain to 1.26.5 and other indirect deps
+
 ## v1.8.16
 
 - Bump github.com/bborbe/k8s to v1.14.4
