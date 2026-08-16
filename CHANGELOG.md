@@ -8,6 +8,12 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- Update Go to 1.26.6 and update dependencies
+- Fix CVE-2026-56864, CVE-2026-56865 (golang.org/x/mod)
+- Fix GO-2026-5026, GO-2026-5972, GO-2026-6090, GO-2026-6218 (stdlib)
+
 ## v1.8.20
 
 - docs: add a License section to the README
