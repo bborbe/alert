@@ -1,11 +1,11 @@
 module github.com/bborbe/alert
 
-go 1.26.5
+go 1.26.6
 
 require (
 	github.com/bborbe/errors v1.5.17
-	github.com/bborbe/k8s v1.14.7
-	github.com/bborbe/validation v1.4.18
+	github.com/bborbe/k8s v1.14.9
+	github.com/bborbe/validation v1.4.19
 	github.com/golang/glog v1.2.5
 	github.com/onsi/ginkgo/v2 v2.32.0
 	github.com/onsi/gomega v1.42.1
@@ -16,11 +16,11 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.4.0 // indirect
-	github.com/bborbe/collection v1.20.19 // indirect
-	github.com/bborbe/math v1.3.17 // indirect
-	github.com/bborbe/parse v1.10.18 // indirect
-	github.com/bborbe/run v1.9.32 // indirect
-	github.com/bborbe/time v1.27.7 // indirect
+	github.com/bborbe/collection v1.20.20 // indirect
+	github.com/bborbe/math v1.3.18 // indirect
+	github.com/bborbe/parse v1.10.19 // indirect
+	github.com/bborbe/run v1.9.34 // indirect
+	github.com/bborbe/time v1.27.8 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
@@ -62,15 +62,15 @@ require (
 	github.com/x448/float16 v0.8.4 // indirect
 	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/mod v0.37.0 // indirect
-	golang.org/x/net v0.57.0 // indirect
+	golang.org/x/mod v0.40.0 // indirect
+	golang.org/x/net v0.58.0 // indirect
 	golang.org/x/oauth2 v0.36.0 // indirect
 	golang.org/x/sync v0.22.0 // indirect
 	golang.org/x/sys v0.47.0 // indirect
 	golang.org/x/term v0.45.0 // indirect
-	golang.org/x/text v0.40.0 // indirect
+	golang.org/x/text v0.41.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
-	golang.org/x/tools v0.47.0 // indirect
+	golang.org/x/tools v0.49.0 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
