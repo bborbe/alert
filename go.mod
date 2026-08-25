@@ -4,7 +4,7 @@ go 1.27.0
 
 require (
 	github.com/bborbe/errors v1.5.20
-	github.com/bborbe/k8s v1.14.12
+	github.com/bborbe/k8s v1.14.14
 	github.com/bborbe/validation v1.4.22
 	github.com/golang/glog v1.2.5
 	github.com/onsi/ginkgo/v2 v2.32.1
@@ -16,7 +16,7 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.4.0 // indirect
-	github.com/bborbe/collection v1.20.23 // indirect
+	github.com/bborbe/collection v1.20.24 // indirect
 	github.com/bborbe/math v1.4.5 // indirect
 	github.com/bborbe/parse v1.10.21 // indirect
 	github.com/bborbe/run v1.9.37 // indirect
@@ -84,6 +84,4 @@ require (
 	sigs.k8s.io/yaml v1.6.0 // indirect
 )
 
-exclude (
-	cloud.google.com/go v0.26.0
-)
+exclude cloud.google.com/go v0.26.0
