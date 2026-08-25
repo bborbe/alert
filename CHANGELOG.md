@@ -11,6 +11,9 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 ## Unreleased
 
 - chore: update github.com/bborbe/k8s to v1.14.14
+## v1.8.25
+
+- chore: update github.com/bborbe/k8s to v1.14.12
 
 ## v1.8.24
 
