@@ -4,8 +4,8 @@ github.com/bborbe/collection v1.21.4 h1:eyxNnsdbsxojlT9eDlGGclrW/vg8v+43/t0LVCUS
 github.com/bborbe/collection v1.21.4/go.mod h1:k+qS5lxi4qQ/wpw8LiSBr08RiybIDc5/mbzs9yKDq0w=
 github.com/bborbe/errors v1.6.5 h1:WBZOOcmAq1BCHYCmPmgb6LdzoxbjqaVR270Qr6dTIq8=
 github.com/bborbe/errors v1.6.5/go.mod h1:RMOsBpHhLV09ADAfJ8NZnXM+erL86dPPhLTof47D7Fk=
-github.com/bborbe/k8s v1.14.26 h1:kYBY4jnTjsKkqyPV6IiMIpFt17K8eS0o1WReAfZ9aUk=
-github.com/bborbe/k8s v1.14.26/go.mod h1:4asLGXGEKcV4x2CVITRzqr3o06LUcrhHMq9Oyrr1zwc=
+github.com/bborbe/k8s v1.14.27 h1:KUn1/MgXc7FrY2oljlyk2CG13EDptMT1N2AY0PO1uE4=
+github.com/bborbe/k8s v1.14.27/go.mod h1:OusxMkulbDv6dy8eehjHWoxaO5zgbLE4KVVg9ah+aXc=
 github.com/bborbe/math v1.4.16 h1:m8+xQH95hun9xkLMzAQXI6PubTAAaypX8jwEOJsr4Lw=
 github.com/bborbe/math v1.4.16/go.mod h1:VouEOULFzeeJHn9GB3Oho0n3ASy+6v3HEb1tNGG07qY=
 github.com/bborbe/parse v1.12.4 h1:4HikfTtitsfm5Vc0zNkXsKST+MRsjVyqiKTt09+gX1c=
