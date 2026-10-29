@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- chore: update k8s.io/apimachinery to v0.38.0-alpha.3, k8s.io/client-go to v0.38.0-alpha.3
+
 ## v1.8.35
 
 - chore: update github.com/bborbe/errors to v1.6.5, github.com/bborbe/k8s to v1.14.24, github.com/bborbe/validation to v1.5.6, sigs.k8s.io/structured-merge-diff/v7 to v7.0.1
