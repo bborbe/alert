@@ -8,7 +8,7 @@ replace (
 
 require (
 	github.com/bborbe/errors v1.6.5
-	github.com/bborbe/k8s v1.14.28
+	github.com/bborbe/k8s v1.14.29
 	github.com/bborbe/validation v1.5.6
 	github.com/golang/glog v1.2.5
 	github.com/onsi/ginkgo/v2 v2.33.1
