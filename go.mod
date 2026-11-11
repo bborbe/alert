@@ -1,6 +1,6 @@
 module github.com/bborbe/alert
 
-go 1.27.3
+go 1.27.4
 
 replace (
 	k8s.io/kube-openapi v0.0.0-20260904170622-9ab3195f2a72 => k8s.io/kube-openapi v0.0.0-20260821135717-be32def86098
@@ -8,7 +8,7 @@ replace (
 
 require (
 	github.com/bborbe/errors v1.6.6
-	github.com/bborbe/k8s v1.14.32
+	github.com/bborbe/k8s v1.14.33
 	github.com/bborbe/validation v1.5.9
 	github.com/golang/glog v1.2.5
 	github.com/onsi/ginkgo/v2 v2.34.0
@@ -20,11 +20,11 @@ require (
 
 require (
 	github.com/Masterminds/semver/v3 v3.5.0 // indirect
-	github.com/bborbe/collection v1.21.6 // indirect
-	github.com/bborbe/math v1.4.18 // indirect
-	github.com/bborbe/parse v1.12.5 // indirect
-	github.com/bborbe/run v1.11.10 // indirect
-	github.com/bborbe/time v1.27.26 // indirect
+	github.com/bborbe/collection v1.21.7 // indirect
+	github.com/bborbe/math v1.4.20 // indirect
+	github.com/bborbe/parse v1.12.7 // indirect
+	github.com/bborbe/run v1.11.11 // indirect
+	github.com/bborbe/time v1.27.28 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
