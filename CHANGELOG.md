@@ -8,7 +8,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v1.8.50
 
 - chore: update github.com/bborbe/errors to v1.7.1, github.com/bborbe/k8s to v1.16.2, github.com/bborbe/validation to v1.5.11
 
